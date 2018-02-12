@@ -1,9 +1,15 @@
 language: python
 python:
  - "3.6"
- - "nightly"
+
 install:
- - pip install pandas
+        - pip install pandas
+        - pip install numpy
+
+
+before_script:
+        - wget http://rapid-hub.org/data/angles_UCI_CS.csv
+        - wget http://rapid-hub.org/data/angles_UCI_CS_out.csv
 script:
- - python temp.py
+        python tst/tst_comp_csv.py
 
