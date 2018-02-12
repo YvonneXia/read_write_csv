@@ -1,0 +1,6 @@
+#This file lists all the packages needed from pip
+
+
+
+pandas==0.22.0
+numpy==1.13.3
